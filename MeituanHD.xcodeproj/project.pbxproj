@@ -9,23 +9,41 @@
 /* Begin PBXBuildFile section */
 		CB660DB11D88E1F60036E26E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DB01D88E1F60036E26E /* main.m */; };
 		CB660DB41D88E1F60036E26E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DB31D88E1F60036E26E /* AppDelegate.m */; };
-		CB660DB71D88E1F60036E26E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DB61D88E1F60036E26E /* ViewController.m */; };
-		CB660DBA1D88E1F60036E26E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB660DB81D88E1F60036E26E /* Main.storyboard */; };
 		CB660DBC1D88E1F60036E26E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB660DBB1D88E1F60036E26E /* Assets.xcassets */; };
-		CB660DBF1D88E1F60036E26E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB660DBD1D88E1F60036E26E /* LaunchScreen.storyboard */; };
+		CB660DD41D88E2EE0036E26E /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB660DD01D88E2EE0036E26E /* categories.plist */; };
+		CB660DD51D88E2EE0036E26E /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB660DD11D88E2EE0036E26E /* cities.plist */; };
+		CB660DD61D88E2EE0036E26E /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB660DD21D88E2EE0036E26E /* cityGroups.plist */; };
+		CB660DD71D88E2EE0036E26E /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB660DD31D88E2EE0036E26E /* sorts.plist */; };
+		CB660DDA1D88E7E50036E26E /* MTCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DD91D88E7E50036E26E /* MTCollectionViewController.m */; };
+		CB660DDD1D88F2950036E26E /* WYNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DDC1D88F2950036E26E /* WYNavController.m */; };
+		CB660DE41D8979630036E26E /* UIBarButtonItem+HMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DE11D8979630036E26E /* UIBarButtonItem+HMCategory.m */; };
+		CB660DE51D8979630036E26E /* UIView+HMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DE31D8979630036E26E /* UIView+HMCategory.m */; };
+		D9C75806F9316C84C1FD0C6B /* libPods-MeituanHD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BD89EB5F6214F950251712 /* libPods-MeituanHD.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28BD89EB5F6214F950251712 /* libPods-MeituanHD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MeituanHD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC1A8E3BC9436350E5EFE10 /* Pods-MeituanHD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeituanHD.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeituanHD/Pods-MeituanHD.release.xcconfig"; sourceTree = "<group>"; };
 		CB660DAC1D88E1F60036E26E /* MeituanHD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeituanHD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB660DB01D88E1F60036E26E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB660DB21D88E1F60036E26E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CB660DB31D88E1F60036E26E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CB660DB51D88E1F60036E26E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CB660DB61D88E1F60036E26E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CB660DB91D88E1F60036E26E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB660DBB1D88E1F60036E26E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CB660DBE1D88E1F60036E26E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB660DC01D88E1F60036E26E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB660DD01D88E2EE0036E26E /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
+		CB660DD11D88E2EE0036E26E /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		CB660DD21D88E2EE0036E26E /* cityGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityGroups.plist; sourceTree = "<group>"; };
+		CB660DD31D88E2EE0036E26E /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sorts.plist; sourceTree = "<group>"; };
+		CB660DD81D88E7E50036E26E /* MTCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCollectionViewController.h; sourceTree = "<group>"; };
+		CB660DD91D88E7E50036E26E /* MTCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCollectionViewController.m; sourceTree = "<group>"; };
+		CB660DDB1D88F2950036E26E /* WYNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYNavController.h; sourceTree = "<group>"; };
+		CB660DDC1D88F2950036E26E /* WYNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYNavController.m; sourceTree = "<group>"; };
+		CB660DDE1D88F3E90036E26E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CB660DE01D8979630036E26E /* UIBarButtonItem+HMCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HMCategory.h"; sourceTree = "<group>"; };
+		CB660DE11D8979630036E26E /* UIBarButtonItem+HMCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HMCategory.m"; sourceTree = "<group>"; };
+		CB660DE21D8979630036E26E /* UIView+HMCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HMCategory.h"; sourceTree = "<group>"; };
+		CB660DE31D8979630036E26E /* UIView+HMCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HMCategory.m"; sourceTree = "<group>"; };
+		E90F004EC7E010EA5DF2A94D /* Pods-MeituanHD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeituanHD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeituanHD/Pods-MeituanHD.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +51,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9C75806F9316C84C1FD0C6B /* libPods-MeituanHD.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FF55A81C6F6AA5713167488 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28BD89EB5F6214F950251712 /* libPods-MeituanHD.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CB660DA31D88E1F60036E26E = {
 			isa = PBXGroup;
 			children = (
 				CB660DAE1D88E1F60036E26E /* MeituanHD */,
 				CB660DAD1D88E1F60036E26E /* Products */,
+				CE2AD9C90FD34CF7B40C8A57 /* Pods */,
+				4FF55A81C6F6AA5713167488 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,15 +87,11 @@
 		CB660DAE1D88E1F60036E26E /* MeituanHD */ = {
 			isa = PBXGroup;
 			children = (
+				CB660DC61D88E2750036E26E /* Classes */,
 				CB660DB21D88E1F60036E26E /* AppDelegate.h */,
 				CB660DB31D88E1F60036E26E /* AppDelegate.m */,
-				CB660DB51D88E1F60036E26E /* ViewController.h */,
-				CB660DB61D88E1F60036E26E /* ViewController.m */,
-				CB660DB81D88E1F60036E26E /* Main.storyboard */,
-				CB660DBB1D88E1F60036E26E /* Assets.xcassets */,
-				CB660DBD1D88E1F60036E26E /* LaunchScreen.storyboard */,
-				CB660DC01D88E1F60036E26E /* Info.plist */,
 				CB660DAF1D88E1F60036E26E /* Supporting Files */,
+				CB660DDE1D88F3E90036E26E /* PrefixHeader.pch */,
 			);
 			path = MeituanHD;
 			sourceTree = "<group>";
@@ -74,9 +99,122 @@
 		CB660DAF1D88E1F60036E26E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CB660DCF1D88E2EE0036E26E /* Plist */,
+				CB660DBB1D88E1F60036E26E /* Assets.xcassets */,
+				CB660DC01D88E1F60036E26E /* Info.plist */,
 				CB660DB01D88E1F60036E26E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB660DC61D88E2750036E26E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CB660DC81D88E2750036E26E /* Home */,
+				CB660DCD1D88E2750036E26E /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CB660DC71D88E2750036E26E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Common;
+			path = ../Common;
+			sourceTree = "<group>";
+		};
+		CB660DC81D88E2750036E26E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CB660DC91D88E2750036E26E /* Controller */,
+				CB660DCA1D88E2750036E26E /* Modal */,
+				CB660DCB1D88E2750036E26E /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CB660DC91D88E2750036E26E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB660DD81D88E7E50036E26E /* MTCollectionViewController.h */,
+				CB660DD91D88E7E50036E26E /* MTCollectionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CB660DCA1D88E2750036E26E /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		CB660DCB1D88E2750036E26E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB660DCC1D88E2750036E26E /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libs;
+			path = ../Libs;
+			sourceTree = "<group>";
+		};
+		CB660DCD1D88E2750036E26E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CB660DDF1D8979430036E26E /* Adition */,
+				CB660DC71D88E2750036E26E /* Common */,
+				CB660DCE1D88E2750036E26E /* Others */,
+				CB660DCC1D88E2750036E26E /* Libs */,
+				CB660DDB1D88F2950036E26E /* WYNavController.h */,
+				CB660DDC1D88F2950036E26E /* WYNavController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CB660DCE1D88E2750036E26E /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Others;
+			path = ../Others;
+			sourceTree = "<group>";
+		};
+		CB660DCF1D88E2EE0036E26E /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				CB660DD01D88E2EE0036E26E /* categories.plist */,
+				CB660DD11D88E2EE0036E26E /* cities.plist */,
+				CB660DD21D88E2EE0036E26E /* cityGroups.plist */,
+				CB660DD31D88E2EE0036E26E /* sorts.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		CB660DDF1D8979430036E26E /* Adition */ = {
+			isa = PBXGroup;
+			children = (
+				CB660DE01D8979630036E26E /* UIBarButtonItem+HMCategory.h */,
+				CB660DE11D8979630036E26E /* UIBarButtonItem+HMCategory.m */,
+				CB660DE21D8979630036E26E /* UIView+HMCategory.h */,
+				CB660DE31D8979630036E26E /* UIView+HMCategory.m */,
+			);
+			path = Adition;
+			sourceTree = "<group>";
+		};
+		CE2AD9C90FD34CF7B40C8A57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E90F004EC7E010EA5DF2A94D /* Pods-MeituanHD.debug.xcconfig */,
+				9AC1A8E3BC9436350E5EFE10 /* Pods-MeituanHD.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB660DC31D88E1F60036E26E /* Build configuration list for PBXNativeTarget "MeituanHD" */;
 			buildPhases = (
+				E05C9689B2C57280AE4A09DA /* [CP] Check Pods Manifest.lock */,
 				CB660DA81D88E1F60036E26E /* Sources */,
 				CB660DA91D88E1F60036E26E /* Frameworks */,
 				CB660DAA1D88E1F60036E26E /* Resources */,
+				F8F2192502CD2112670474FE /* [CP] Embed Pods Frameworks */,
+				37768CEC1E18F22C21A60CF8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,45 +278,79 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB660DBF1D88E1F60036E26E /* LaunchScreen.storyboard in Resources */,
+				CB660DD51D88E2EE0036E26E /* cities.plist in Resources */,
+				CB660DD41D88E2EE0036E26E /* categories.plist in Resources */,
+				CB660DD71D88E2EE0036E26E /* sorts.plist in Resources */,
 				CB660DBC1D88E1F60036E26E /* Assets.xcassets in Resources */,
-				CB660DBA1D88E1F60036E26E /* Main.storyboard in Resources */,
+				CB660DD61D88E2EE0036E26E /* cityGroups.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37768CEC1E18F22C21A60CF8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeituanHD/Pods-MeituanHD-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E05C9689B2C57280AE4A09DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F8F2192502CD2112670474FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeituanHD/Pods-MeituanHD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB660DA81D88E1F60036E26E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB660DB71D88E1F60036E26E /* ViewController.m in Sources */,
+				CB660DE41D8979630036E26E /* UIBarButtonItem+HMCategory.m in Sources */,
+				CB660DE51D8979630036E26E /* UIView+HMCategory.m in Sources */,
 				CB660DB41D88E1F60036E26E /* AppDelegate.m in Sources */,
+				CB660DDD1D88F2950036E26E /* WYNavController.m in Sources */,
+				CB660DDA1D88E7E50036E26E /* MTCollectionViewController.m in Sources */,
 				CB660DB11D88E1F60036E26E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		CB660DB81D88E1F60036E26E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB660DB91D88E1F60036E26E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CB660DBD1D88E1F60036E26E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB660DBE1D88E1F60036E26E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CB660DC11D88E1F60036E26E /* Debug */ = {
@@ -270,8 +445,10 @@
 		};
 		CB660DC41D88E1F60036E26E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E90F004EC7E010EA5DF2A94D /* Pods-MeituanHD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = MeituanHD/PrefixHeader.pch;
 				INFOPLIST_FILE = MeituanHD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = h.MeituanHD;
@@ -281,8 +458,10 @@
 		};
 		CB660DC51D88E1F60036E26E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AC1A8E3BC9436350E5EFE10 /* Pods-MeituanHD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = MeituanHD/PrefixHeader.pch;
 				INFOPLIST_FILE = MeituanHD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = h.MeituanHD;
@@ -309,6 +488,7 @@
 				CB660DC51D88E1F60036E26E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

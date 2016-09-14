@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MTCollectionViewController.h"
+#import "WYNavController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //创建window
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    WYNavController *nav = [[WYNavController alloc]initWithRootViewController:[MTCollectionViewController new]];
+    self.window.rootViewController = nav;
+    //设置主窗口显示
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
