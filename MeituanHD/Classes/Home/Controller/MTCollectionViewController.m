@@ -46,6 +46,7 @@
     //2 分类
     HomeNavView *categoryNavView = [HomeNavView homeNavView];
     UIBarButtonItem *cateItem = [[UIBarButtonItem alloc]initWithCustomView:categoryNavView];
+    [categoryNavView addTarget:self action:@selector(categoryClick) forControlEvents:UIControlEventTouchUpInside];
     
     //3 区域
     HomeNavView *districtNavView = [HomeNavView homeNavView];
@@ -68,6 +69,11 @@
     searchItem.customView.width = 60;
     //设置右边的导航栏按钮
     self.navigationItem.rightBarButtonItems = @[mapItem,searchItem];
+}
+
+-(void)categoryClick
+{
+    NSLog(@"德玛西亚");
 }
 
 -(void)mapItemClick

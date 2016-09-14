@@ -16,5 +16,11 @@
     return [[NSBundle mainBundle] loadNibNamed:@"HomeNavView" owner:nil options:nil].firstObject;
     
 }
+- (IBAction)buttonClick:(id)sender
+{
+    //相当于按钮点击之后发生一个通知
+    [self sendActionsForControlEvents:UIControlEventTouchUpInside];
+    
+}
 
 @end
