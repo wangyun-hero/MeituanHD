@@ -8,6 +8,8 @@
 
 #import "MTCollectionViewController.h"
 
+
+
 @interface MTCollectionViewController ()
 
 @end
@@ -29,13 +31,30 @@
     self.collectionView.backgroundColor = HMColor(230, 230, 230);
   
     
-    // Do any additional setup after loading the view.
+    //设置右边的item
+    [self setupNavRight];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)setupNavRight
+{
+    //添加地图按钮
+    UIBarButtonItem *mapItem = [UIBarButtonItem barBuutonItemWithTarget:self action:@selector(mapItemClick) icon:@"icon_map" highlighticon:@"icon_map_highlighted"];
+    mapItem.customView.width = 60;
+    //添加搜索按钮
+    UIBarButtonItem *searchItem = [UIBarButtonItem barBuutonItemWithTarget:self action:@selector(searchItemClick) icon:@"icon_search" highlighticon:@"icon_search_highlighted"];
+    searchItem.customView.width = 60;
+    //设置右边的导航栏按钮
+    self.navigationItem.rightBarButtonItems = @[mapItem,searchItem];
 }
 
+-(void)mapItemClick
+{
+    NSLog(@"地图");
+}
+
+-(void)searchItemClick
+{
+    NSLog(@"搜索");
+}
 
 @end
