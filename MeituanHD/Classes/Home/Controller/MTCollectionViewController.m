@@ -30,9 +30,19 @@
     [super viewDidLoad];
     self.collectionView.backgroundColor = HMColor(230, 230, 230);
   
-    
+    //设置左边的logo
+    [self setupNavLeft];
     //设置右边的item
     [self setupNavRight];
+}
+
+-(void)setupNavLeft
+{
+    //设置logo
+    UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_meituan_logo"] style:UIBarButtonItemStylePlain target:nil action:nil];
+    //取消交互
+    item.enabled = NO;
+    self.navigationItem.leftBarButtonItems = @[item];
 }
 
 -(void)setupNavRight
