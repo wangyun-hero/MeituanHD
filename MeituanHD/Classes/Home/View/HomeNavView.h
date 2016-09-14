@@ -10,4 +10,7 @@
 
 @interface HomeNavView : UIView
 
+/** 提供类方法, 快速创建View*/
++ (instancetype)homeNavView;
+
 @end

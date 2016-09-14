@@ -10,12 +10,11 @@
 
 @implementation HomeNavView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+/** 提供类方法, 快速创建View*/
++ (instancetype)homeNavView
+{
+    return [[NSBundle mainBundle] loadNibNamed:@"HomeNavView" owner:nil options:nil].firstObject;
+    
 }
-*/
 
 @end

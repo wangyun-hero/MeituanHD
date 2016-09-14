@@ -7,7 +7,7 @@
 //
 
 #import "MTCollectionViewController.h"
-
+#import "HomeNavView.h"
 
 
 @interface MTCollectionViewController ()
@@ -38,11 +38,24 @@
 
 -(void)setupNavLeft
 {
-    //设置logo
+    //1 设置logo
     UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon_meituan_logo"] style:UIBarButtonItemStylePlain target:nil action:nil];
     //取消交互
     item.enabled = NO;
-    self.navigationItem.leftBarButtonItems = @[item];
+    
+    //2 分类
+    HomeNavView *categoryNavView = [HomeNavView homeNavView];
+    UIBarButtonItem *cateItem = [[UIBarButtonItem alloc]initWithCustomView:categoryNavView];
+    
+    //3 区域
+    HomeNavView *districtNavView = [HomeNavView homeNavView];
+    UIBarButtonItem *disItem = [[UIBarButtonItem alloc]initWithCustomView:districtNavView];
+    //4 排序
+    HomeNavView *sortNavView = [HomeNavView homeNavView];
+    UIBarButtonItem *sortItem = [[UIBarButtonItem alloc]initWithCustomView:sortNavView];
+    
+    
+    self.navigationItem.leftBarButtonItems = @[item,cateItem,disItem,sortItem];
 }
 
 -(void)setupNavRight
