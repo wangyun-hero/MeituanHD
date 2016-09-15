@@ -8,6 +8,9 @@
 
 #import "WYDropDownView.h"
 #import "WYCategoryModel.h"
+#import "WYDropdownLeftTableViewCell.h"
+#import "WYDropdownRightTableViewCell.h"
+
 @interface WYDropDownView() <UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *leftTabelView;
@@ -49,15 +52,9 @@
     UITableViewCell *cell = nil;
     if (tableView == self.leftTabelView) {
         
-        static NSString *cellID = @"cellID";
-        cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-        if (cell == nil) {
-            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
-            //设置cell的背景
-            cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg_dropdown_leftpart"]];
-            //选中的背景
-            cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg_dropdown_left_selected"]];
-        }
+        //左边表格
+        WYDropdownLeftTableViewCell *cell = [WYDropdownLeftTableViewCell dropdownLeftTableViewCellWithTableView:tableView];
+        
         //取到对应位置的模型
         WYCategoryModel *model = self.categoryModelArray[indexPath.row];
         
@@ -74,29 +71,23 @@
 
         }
         
+        return cell;
+        
     }else{
         
-        static NSString *cellID = @"cellID";
-        cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-        if (cell == nil) {
-            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
-            //在创建cell的时候, 设置默认背景
-            cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg_dropdown_rightpart"]];
-
-            //设置选中背景
-            cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg_dropdown_right_selected"]];
-
-            
-        }
+        //左边表格
+        WYDropdownRightTableViewCell *cell = [WYDropdownRightTableViewCell dropdownRightTableViewCellWithTableView:tableView];
+        
         //我们需要知道哪个cell被点击了,右边tabelview的数据就一个array
         
         NSArray *rightArray = self.selectLeftModel.subcategories;
         
         //设置内容
         cell.textLabel.text = rightArray[indexPath.row];
+        
+        return cell;
     }
-    return cell;
-   
+    
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

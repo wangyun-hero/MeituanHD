@@ -24,6 +24,8 @@
 		CB660DEF1D89B8960036E26E /* WYDropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB660DEE1D89B8960036E26E /* WYDropDownView.xib */; };
 		CB660DF21D89BCFC0036E26E /* WYCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DF11D89BCFC0036E26E /* WYCategoryViewController.m */; };
 		CB660DF51D8A78870036E26E /* WYCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DF41D8A78870036E26E /* WYCategoryModel.m */; };
+		CB660DF81D8A8E870036E26E /* WYDropdownLeftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DF71D8A8E870036E26E /* WYDropdownLeftTableViewCell.m */; };
+		CB660DFB1D8A8EA10036E26E /* WYDropdownRightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DFA1D8A8EA10036E26E /* WYDropdownRightTableViewCell.m */; };
 		D9C75806F9316C84C1FD0C6B /* libPods-MeituanHD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BD89EB5F6214F950251712 /* libPods-MeituanHD.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,10 @@
 		CB660DF11D89BCFC0036E26E /* WYCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCategoryViewController.m; sourceTree = "<group>"; };
 		CB660DF31D8A78870036E26E /* WYCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYCategoryModel.h; sourceTree = "<group>"; };
 		CB660DF41D8A78870036E26E /* WYCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCategoryModel.m; sourceTree = "<group>"; };
+		CB660DF61D8A8E870036E26E /* WYDropdownLeftTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYDropdownLeftTableViewCell.h; sourceTree = "<group>"; };
+		CB660DF71D8A8E870036E26E /* WYDropdownLeftTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYDropdownLeftTableViewCell.m; sourceTree = "<group>"; };
+		CB660DF91D8A8EA10036E26E /* WYDropdownRightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYDropdownRightTableViewCell.h; sourceTree = "<group>"; };
+		CB660DFA1D8A8EA10036E26E /* WYDropdownRightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYDropdownRightTableViewCell.m; sourceTree = "<group>"; };
 		E90F004EC7E010EA5DF2A94D /* Pods-MeituanHD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeituanHD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeituanHD/Pods-MeituanHD.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,6 +185,10 @@
 				CB660DEB1D89B7560036E26E /* WYDropDownView.h */,
 				CB660DEC1D89B7560036E26E /* WYDropDownView.m */,
 				CB660DEE1D89B8960036E26E /* WYDropDownView.xib */,
+				CB660DF61D8A8E870036E26E /* WYDropdownLeftTableViewCell.h */,
+				CB660DF71D8A8E870036E26E /* WYDropdownLeftTableViewCell.m */,
+				CB660DF91D8A8EA10036E26E /* WYDropdownRightTableViewCell.h */,
+				CB660DFA1D8A8EA10036E26E /* WYDropdownRightTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -374,11 +384,13 @@
 				CB660DB41D88E1F60036E26E /* AppDelegate.m in Sources */,
 				CB660DED1D89B7560036E26E /* WYDropDownView.m in Sources */,
 				CB660DE81D899B0F0036E26E /* HomeNavView.m in Sources */,
+				CB660DF81D8A8E870036E26E /* WYDropdownLeftTableViewCell.m in Sources */,
 				CB660DDD1D88F2950036E26E /* WYNavController.m in Sources */,
 				CB660DDA1D88E7E50036E26E /* MTCollectionViewController.m in Sources */,
 				CB660DB11D88E1F60036E26E /* main.m in Sources */,
 				CB660DF21D89BCFC0036E26E /* WYCategoryViewController.m in Sources */,
 				CB660DF51D8A78870036E26E /* WYCategoryModel.m in Sources */,
+				CB660DFB1D8A8EA10036E26E /* WYDropdownRightTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
