@@ -8,7 +8,7 @@
 
 #import "MTCollectionViewController.h"
 #import "HomeNavView.h"
-
+#import "WYCategoryViewController.h"
 
 @interface MTCollectionViewController ()
 
@@ -73,7 +73,16 @@
 
 -(void)categoryClick
 {
-    NSLog(@"德玛西亚");
+    //获取控制器
+    WYCategoryViewController *vc = [[WYCategoryViewController alloc]init];
+    //呈现方式
+    vc.modalPresentationStyle = UIModalPresentationPopover;
+    //获取Popover
+    UIPopoverPresentationController *popVC = vc.popoverPresentationController;
+    //绑定属性
+    popVC.barButtonItem = self.navigationItem.leftBarButtonItems[1];
+    //弹出
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 -(void)mapItemClick
