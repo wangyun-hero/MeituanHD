@@ -23,6 +23,7 @@
 		CB660DED1D89B7560036E26E /* WYDropDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DEC1D89B7560036E26E /* WYDropDownView.m */; };
 		CB660DEF1D89B8960036E26E /* WYDropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB660DEE1D89B8960036E26E /* WYDropDownView.xib */; };
 		CB660DF21D89BCFC0036E26E /* WYCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DF11D89BCFC0036E26E /* WYCategoryViewController.m */; };
+		CB660DF51D8A78870036E26E /* WYCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DF41D8A78870036E26E /* WYCategoryModel.m */; };
 		D9C75806F9316C84C1FD0C6B /* libPods-MeituanHD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BD89EB5F6214F950251712 /* libPods-MeituanHD.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 		CB660DEE1D89B8960036E26E /* WYDropDownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WYDropDownView.xib; sourceTree = "<group>"; };
 		CB660DF01D89BCFC0036E26E /* WYCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYCategoryViewController.h; sourceTree = "<group>"; };
 		CB660DF11D89BCFC0036E26E /* WYCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCategoryViewController.m; sourceTree = "<group>"; };
+		CB660DF31D8A78870036E26E /* WYCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYCategoryModel.h; sourceTree = "<group>"; };
+		CB660DF41D8A78870036E26E /* WYCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCategoryModel.m; sourceTree = "<group>"; };
 		E90F004EC7E010EA5DF2A94D /* Pods-MeituanHD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeituanHD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeituanHD/Pods-MeituanHD.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,6 +164,8 @@
 		CB660DCA1D88E2750036E26E /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				CB660DF31D8A78870036E26E /* WYCategoryModel.h */,
+				CB660DF41D8A78870036E26E /* WYCategoryModel.m */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -373,6 +378,7 @@
 				CB660DDA1D88E7E50036E26E /* MTCollectionViewController.m in Sources */,
 				CB660DB11D88E1F60036E26E /* main.m in Sources */,
 				CB660DF21D89BCFC0036E26E /* WYCategoryViewController.m in Sources */,
+				CB660DF51D8A78870036E26E /* WYCategoryModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

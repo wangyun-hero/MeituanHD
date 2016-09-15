@@ -13,4 +13,6 @@
 /** 提供类方法, 快速创建View*/
 + (instancetype)dropdownView;
 
+@property(nonatomic,strong) NSArray *categoryModelArray;
+
 @end

@@ -8,6 +8,7 @@
 
 #import "WYCategoryViewController.h"
 #import "WYDropDownView.h"
+#import "WYCategoryModel.h"
 
 @interface WYCategoryViewController ()
 
@@ -25,6 +26,11 @@
     
     //设置弹框的大小(就是xib中dropview的大小)
     self.preferredContentSize = dropDownView.size;
+    //获取plist数据
+    NSArray *array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"categories.plist" ofType:nil]];
+    //用YYModel转成模型并且将数据传递给dropDownView(让其实现数据源)
+    dropDownView.categoryModelArray = [NSArray yy_modelArrayWithClass:[WYCategoryModel class] json:array];
+    
     
     
 }
