@@ -61,8 +61,18 @@
         //取到对应位置的模型
         WYCategoryModel *model = self.categoryModelArray[indexPath.row];
         
-        //设置内容
+        //设置label
         cell.textLabel.text = model.name;
+        //设置image
+        cell.imageView.image = [UIImage imageNamed:model.icon];
+        //设置cell的附属视图(小箭头)
+        //当是左边第一个cell的时候,我们不需要箭头
+        if (model.subcategories.count == 0) {
+            cell.accessoryType = UITableViewCellAccessoryNone;
+        }else{
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+
+        }
         
     }else{
         
