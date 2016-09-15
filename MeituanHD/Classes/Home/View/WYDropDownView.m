@@ -12,6 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *leftTabelView;
 @property (weak, nonatomic) IBOutlet UITableView *rightTabelView;
+//当选中左边cell的时候,记录对应位置的模型
+@property(nonatomic,strong) WYCategoryModel *selectLeftModel;
 
 @end
 
@@ -35,21 +37,56 @@
 #pragma mark -数据源
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.categoryModelArray.count;
+    if (tableView == self.leftTabelView) {
+        return self.categoryModelArray.count;
+    }else{
+        return self.selectLeftModel.subcategories.count;
+    }
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *cellID = @"cellID";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
+    UITableViewCell *cell = nil;
+    if (tableView == self.leftTabelView) {
+        
+        static NSString *cellID = @"cellID";
+        cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
+        }
+        //取到对应位置的模型
+        WYCategoryModel *model = self.categoryModelArray[indexPath.row];
+        
+        //设置内容
+        cell.textLabel.text = model.name;
+        
+    }else{
+        
+        static NSString *cellID = @"cellID";
+        cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
+        }
+        //我们需要知道哪个cell被点击了,右边tabelview的数据就一个array
+        
+        NSArray *rightArray = self.selectLeftModel.subcategories;
+        
+        //设置内容
+        cell.textLabel.text = rightArray[indexPath.row];
     }
-    //取到对应位置的模型
-    WYCategoryModel *model = self.categoryModelArray[indexPath.row];
-    //设置内容
-    cell.textLabel.text = model.name;
     return cell;
+   
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //判断当选中的是左边的tabelview的cell的时候,记录对应的模型,让右边tabelview刷新数据
+    if (tableView == self.leftTabelView) {
+        self.selectLeftModel = self.categoryModelArray[indexPath.row];
+    }
+    //右边tabelview刷新数据
+    [self.rightTabelView reloadData];
+
 }
 
 
