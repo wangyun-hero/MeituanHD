@@ -9,6 +9,8 @@
 #import "WYDistrictViewController.h"
 #import "WYDropDownView.h"
 #import "WYCityViewController.h"
+#import "WYCityViewController.h"
+
 @interface WYDistrictViewController ()
 
 @end
@@ -18,7 +20,14 @@
 
 - (IBAction)switchCityButtonClick:(id)sender
 {
-    NSLog(@"aaaaaaa");
+    WYCityViewController *cityVC = [WYCityViewController new];
+    //呈现样式
+    cityVC.modalPresentationStyle = UIModalPresentationFormSheet;
+    //转场样式
+    cityVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    //模态
+    [self presentViewController:cityVC animated:YES completion:nil];
+    
 }
 
 - (void)viewDidLoad {
