@@ -22,7 +22,7 @@
 /** 宏定义*/
 
 #define HMColor(r,g,b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1]
-
+#define WYTintColor HMColor(94, 185, 173)
 
 /** NSLog 输出宏*/
 #ifdef DEBUG
