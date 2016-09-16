@@ -11,7 +11,7 @@
 //#import <YYModel/YYModel.h>
 
 #import <YYModel.h>
-
+#import <Masonry.h>
 
 /** 分类*/
 #import "UIView+HMCategory.h"

@@ -8,13 +8,14 @@
 
 #import "WYCityViewController.h"
 #import "WYCityGroupModel.h"
+#import "WYCitySearchTableViewController.h"
 
 @interface WYCityViewController ()<UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate>
 @property (nonatomic, strong) NSArray *cityGroupArray;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (weak, nonatomic) IBOutlet UITableView *tabView;
 @property (weak, nonatomic) IBOutlet UIButton *coverButton;
-
+@property (nonatomic, weak) WYCitySearchTableViewController *citySearchVC;
 
 @end
 
@@ -89,6 +90,17 @@
     [self.view endEditing:YES];
 }
 
+#pragma mark -监听文本框的改变
+-(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
+{
+    //如果有值
+    if (searchText.length > 0) {
+        self.citySearchVC.view.hidden = NO;
+    }else{
+        self.citySearchVC.view.hidden = YES;
+    }
+    
+}
 
 #pragma mark -UITabelView数据源
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -143,5 +155,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(WYCitySearchTableViewController *)citySearchVC
+{
+    if (_citySearchVC == nil) {
+        //创建控制器
+        WYCitySearchTableViewController *citySearchVC = [WYCitySearchTableViewController new];
+        //建立父子关系
+        [self addChildViewController:citySearchVC];
+        [self.view addSubview:citySearchVC.view];
+        
+        //布局
+        [citySearchVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(self.coverButton);
+        }];
+        _citySearchVC = citySearchVC;
+        
+    }
+    return _citySearchVC;
+   
+}
 
 @end
