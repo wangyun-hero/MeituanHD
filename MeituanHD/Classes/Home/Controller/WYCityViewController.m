@@ -69,11 +69,11 @@
     //4. 显示遮盖
     self.coverButton.alpha = 0;
     
-//    //5. 文本框清空
-//    searchBar.text = @"";
-//    
-//    //6. 隐藏搜索结果控制器
-//    self.citySearchVC.view.hidden = YES;
+    //5. 文本框清空
+    searchBar.text = @"";
+    
+    //6. 隐藏搜索结果控制器
+    self.citySearchVC.view.hidden = YES;
 
 }
 
@@ -96,6 +96,8 @@
     //如果有值
     if (searchText.length > 0) {
         self.citySearchVC.view.hidden = NO;
+        //将输入的值传递
+        self.citySearchVC.searchText = searchText;
     }else{
         self.citySearchVC.view.hidden = YES;
     }

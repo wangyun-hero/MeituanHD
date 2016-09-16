@@ -13,6 +13,7 @@
 		CB04A0D51D8C1C03009B21E4 /* WYCityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB04A0D31D8C1C03009B21E4 /* WYCityViewController.xib */; };
 		CB04A0D81D8C427C009B21E4 /* WYCityGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB04A0D71D8C427C009B21E4 /* WYCityGroupModel.m */; };
 		CB04A0DB1D8C60BA009B21E4 /* WYCitySearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB04A0DA1D8C60BA009B21E4 /* WYCitySearchTableViewController.m */; };
+		CB04A0DE1D8C6675009B21E4 /* WYCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB04A0DD1D8C6675009B21E4 /* WYCityModel.m */; };
 		CB660DB11D88E1F60036E26E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DB01D88E1F60036E26E /* main.m */; };
 		CB660DB41D88E1F60036E26E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DB31D88E1F60036E26E /* AppDelegate.m */; };
 		CB660DBC1D88E1F60036E26E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB660DBB1D88E1F60036E26E /* Assets.xcassets */; };
@@ -48,6 +49,8 @@
 		CB04A0D71D8C427C009B21E4 /* WYCityGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCityGroupModel.m; sourceTree = "<group>"; };
 		CB04A0D91D8C60BA009B21E4 /* WYCitySearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYCitySearchTableViewController.h; sourceTree = "<group>"; };
 		CB04A0DA1D8C60BA009B21E4 /* WYCitySearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCitySearchTableViewController.m; sourceTree = "<group>"; };
+		CB04A0DC1D8C6675009B21E4 /* WYCityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYCityModel.h; sourceTree = "<group>"; };
+		CB04A0DD1D8C6675009B21E4 /* WYCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCityModel.m; sourceTree = "<group>"; };
 		CB660DAC1D88E1F60036E26E /* MeituanHD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeituanHD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB660DB01D88E1F60036E26E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB660DB21D88E1F60036E26E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -198,6 +201,8 @@
 				CB660DF41D8A78870036E26E /* WYCategoryModel.m */,
 				CB04A0D61D8C427C009B21E4 /* WYCityGroupModel.h */,
 				CB04A0D71D8C427C009B21E4 /* WYCityGroupModel.m */,
+				CB04A0DC1D8C6675009B21E4 /* WYCityModel.h */,
+				CB04A0DD1D8C6675009B21E4 /* WYCityModel.m */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -416,6 +421,7 @@
 				CB04A0DB1D8C60BA009B21E4 /* WYCitySearchTableViewController.m in Sources */,
 				CB660DE81D899B0F0036E26E /* HomeNavView.m in Sources */,
 				CB660DF81D8A8E870036E26E /* WYDropdownLeftTableViewCell.m in Sources */,
+				CB04A0DE1D8C6675009B21E4 /* WYCityModel.m in Sources */,
 				CB660DDD1D88F2950036E26E /* WYNavController.m in Sources */,
 				CB660DDA1D88E7E50036E26E /* MTCollectionViewController.m in Sources */,
 				CB660DB11D88E1F60036E26E /* main.m in Sources */,

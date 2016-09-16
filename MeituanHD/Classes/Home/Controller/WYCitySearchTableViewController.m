@@ -7,8 +7,13 @@
 //
 
 #import "WYCitySearchTableViewController.h"
-
+#import "WYCityModel.h"
 @interface WYCitySearchTableViewController ()
+//总的城市数据数组
+@property (nonatomic, strong) NSArray *citiesArray;
+
+//搜索的结果数组
+@property (nonatomic, strong) NSMutableArray *searchResultArray;
 
 @end
 
@@ -17,82 +22,59 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    // 获取总的城市数据
+    NSArray *citiesPlist = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]  pathForResource:@"cities.plist" ofType:nil]];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
-}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    self.citiesArray = [NSArray yy_modelArrayWithClass:NSClassFromString(@"WYCityModel") json:citiesPlist];
     
-    // Configure the cell...
+    //初始化搜索结果的数组
+    self.searchResultArray = [NSMutableArray array];
+}
+
+-(void)setSearchText:(NSString *)searchText
+{
+    //1. copy 内存管理属性
+    _searchText = [searchText copy];
+    //2. 将字符串转换为小写
+    _searchText = _searchText.lowercaseString;
+    //3. 清空搜索结果里面的数据
+    [self.searchResultArray removeAllObjects];
+    //4. 遍历
+    for (WYCityModel *cityModel in self.citiesArray) {
+        // 中文/ 拼音/拼音缩写 只要包含了, 就应该返回当前城市名
+        if ([cityModel.name containsString:_searchText] || [cityModel.pinYin containsString:_searchText] || [cityModel.pinYinHead containsString:_searchText]) {
+            
+            [self.searchResultArray addObject:cityModel.name];
+        }
+
+    }
+    //刷新数据
+    [self.tableView reloadData];
     
-    return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+#pragma mark -数据源
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.searchResultArray.count;
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellID = @"cellID";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
+    }
+    cell.textLabel.text = self.searchResultArray[indexPath.row];
+    return  cell;
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return [NSString stringWithFormat:@"共有%zd个搜索结果",self.searchResultArray.count];
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

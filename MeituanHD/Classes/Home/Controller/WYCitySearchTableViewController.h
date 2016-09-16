@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface WYCitySearchTableViewController : UITableViewController
+@property (nonatomic, copy) NSString *searchText;
 
 @end
