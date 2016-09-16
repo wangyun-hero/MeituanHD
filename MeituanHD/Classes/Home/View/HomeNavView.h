@@ -19,5 +19,11 @@
  3. 自定义控件写法: 将View改成UIControl
  */
 
+//提供属性和方法之间建议选择方法
+//1 属性权限高
+//2 如果
 
+
+//提供方法供外界调用
+-(void)setTarget:(id)target action:(SEL)action;
 @end

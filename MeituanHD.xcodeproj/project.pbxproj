@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB04A0CF1D8C144A009B21E4 /* WYDistrictViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB04A0CD1D8C144A009B21E4 /* WYDistrictViewController.m */; };
+		CB04A0D01D8C144A009B21E4 /* WYDistrictViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB04A0CE1D8C144A009B21E4 /* WYDistrictViewController.xib */; };
 		CB660DB11D88E1F60036E26E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DB01D88E1F60036E26E /* main.m */; };
 		CB660DB41D88E1F60036E26E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DB31D88E1F60036E26E /* AppDelegate.m */; };
 		CB660DBC1D88E1F60036E26E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB660DBB1D88E1F60036E26E /* Assets.xcassets */; };
@@ -32,6 +34,9 @@
 /* Begin PBXFileReference section */
 		28BD89EB5F6214F950251712 /* libPods-MeituanHD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MeituanHD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AC1A8E3BC9436350E5EFE10 /* Pods-MeituanHD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeituanHD.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeituanHD/Pods-MeituanHD.release.xcconfig"; sourceTree = "<group>"; };
+		CB04A0CC1D8C144A009B21E4 /* WYDistrictViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYDistrictViewController.h; sourceTree = "<group>"; };
+		CB04A0CD1D8C144A009B21E4 /* WYDistrictViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYDistrictViewController.m; sourceTree = "<group>"; };
+		CB04A0CE1D8C144A009B21E4 /* WYDistrictViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WYDistrictViewController.xib; sourceTree = "<group>"; };
 		CB660DAC1D88E1F60036E26E /* MeituanHD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeituanHD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB660DB01D88E1F60036E26E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB660DB21D88E1F60036E26E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -163,6 +168,9 @@
 				CB660DD91D88E7E50036E26E /* MTCollectionViewController.m */,
 				CB660DF01D89BCFC0036E26E /* WYCategoryViewController.h */,
 				CB660DF11D89BCFC0036E26E /* WYCategoryViewController.m */,
+				CB04A0CC1D8C144A009B21E4 /* WYDistrictViewController.h */,
+				CB04A0CD1D8C144A009B21E4 /* WYDistrictViewController.m */,
+				CB04A0CE1D8C144A009B21E4 /* WYDistrictViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -316,6 +324,7 @@
 			files = (
 				CB660DD51D88E2EE0036E26E /* cities.plist in Resources */,
 				CB660DEA1D899B280036E26E /* HomeNavView.xib in Resources */,
+				CB04A0D01D8C144A009B21E4 /* WYDistrictViewController.xib in Resources */,
 				CB660DD41D88E2EE0036E26E /* categories.plist in Resources */,
 				CB660DD71D88E2EE0036E26E /* sorts.plist in Resources */,
 				CB660DBC1D88E1F60036E26E /* Assets.xcassets in Resources */,
@@ -388,6 +397,7 @@
 				CB660DDD1D88F2950036E26E /* WYNavController.m in Sources */,
 				CB660DDA1D88E7E50036E26E /* MTCollectionViewController.m in Sources */,
 				CB660DB11D88E1F60036E26E /* main.m in Sources */,
+				CB04A0CF1D8C144A009B21E4 /* WYDistrictViewController.m in Sources */,
 				CB660DF21D89BCFC0036E26E /* WYCategoryViewController.m in Sources */,
 				CB660DF51D8A78870036E26E /* WYCategoryModel.m in Sources */,
 				CB660DFB1D8A8EA10036E26E /* WYDropdownRightTableViewCell.m in Sources */,

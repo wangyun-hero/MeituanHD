@@ -7,6 +7,10 @@
 //
 
 #import "HomeNavView.h"
+@interface HomeNavView()
+@property (weak, nonatomic) IBOutlet UIButton *discriptBtn;
+
+@end
 
 @implementation HomeNavView
 
@@ -23,4 +27,10 @@
     
 }
 
+//绑定按钮
+-(void)setTarget:(id)target action:(SEL)action{
+    
+    [self.discriptBtn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    
+}
 @end

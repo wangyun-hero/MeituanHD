@@ -9,7 +9,7 @@
 #import "MTCollectionViewController.h"
 #import "HomeNavView.h"
 #import "WYCategoryViewController.h"
-
+#import "WYDistrictViewController.h"
 @interface MTCollectionViewController ()
 
 @end
@@ -51,6 +51,9 @@
     //3 区域
     HomeNavView *districtNavView = [HomeNavView homeNavView];
     UIBarButtonItem *disItem = [[UIBarButtonItem alloc]initWithCustomView:districtNavView];
+    [districtNavView setTarget:self action:@selector(districtClick)];
+    
+    
     //4 排序
     HomeNavView *sortNavView = [HomeNavView homeNavView];
     UIBarButtonItem *sortItem = [[UIBarButtonItem alloc]initWithCustomView:sortNavView];
@@ -69,6 +72,20 @@
     searchItem.customView.width = 60;
     //设置右边的导航栏按钮
     self.navigationItem.rightBarButtonItems = @[mapItem,searchItem];
+}
+
+-(void)districtClick
+{
+    //获取控制器
+    WYDistrictViewController *vc = [WYDistrictViewController new];
+    //呈现方式
+    vc.modalPresentationStyle = UIModalPresentationPopover;
+    //获取Popover
+    UIPopoverPresentationController *popVC = vc.popoverPresentationController;
+    //绑定属性
+    popVC.barButtonItem = self.navigationItem.leftBarButtonItems[2];
+    //弹出
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 -(void)categoryClick
