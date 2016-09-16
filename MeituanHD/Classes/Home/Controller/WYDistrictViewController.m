@@ -7,31 +7,36 @@
 //
 
 #import "WYDistrictViewController.h"
-
+#import "WYDropDownView.h"
+#import "WYCityViewController.h"
 @interface WYDistrictViewController ()
 
 @end
 
 @implementation WYDistrictViewController
 
+
+- (IBAction)switchCityButtonClick:(id)sender
+{
+    NSLog(@"aaaaaaa");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    //取到view
+    WYDropDownView *dropView = [WYDropDownView dropdownView];
+    [self.view addSubview:dropView];
+    
+    //dropview的高度就是navView的高
+    [self.view layoutIfNeeded];
+    UIView *navView = self.view.subviews[0];
+    dropView.y = navView.bounds.size.height;
+    
+    //设置Popover的大小
+    CGFloat height = CGRectGetMaxY(dropView.frame);
+    self.preferredContentSize = CGSizeMake(dropView.size.width, height);
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

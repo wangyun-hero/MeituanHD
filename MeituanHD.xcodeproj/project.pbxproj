@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CB04A0CF1D8C144A009B21E4 /* WYDistrictViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB04A0CD1D8C144A009B21E4 /* WYDistrictViewController.m */; };
 		CB04A0D01D8C144A009B21E4 /* WYDistrictViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB04A0CE1D8C144A009B21E4 /* WYDistrictViewController.xib */; };
+		CB04A0D41D8C1C03009B21E4 /* WYCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB04A0D21D8C1C03009B21E4 /* WYCityViewController.m */; };
+		CB04A0D51D8C1C03009B21E4 /* WYCityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB04A0D31D8C1C03009B21E4 /* WYCityViewController.xib */; };
 		CB660DB11D88E1F60036E26E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DB01D88E1F60036E26E /* main.m */; };
 		CB660DB41D88E1F60036E26E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DB31D88E1F60036E26E /* AppDelegate.m */; };
 		CB660DBC1D88E1F60036E26E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB660DBB1D88E1F60036E26E /* Assets.xcassets */; };
@@ -37,6 +39,9 @@
 		CB04A0CC1D8C144A009B21E4 /* WYDistrictViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYDistrictViewController.h; sourceTree = "<group>"; };
 		CB04A0CD1D8C144A009B21E4 /* WYDistrictViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYDistrictViewController.m; sourceTree = "<group>"; };
 		CB04A0CE1D8C144A009B21E4 /* WYDistrictViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WYDistrictViewController.xib; sourceTree = "<group>"; };
+		CB04A0D11D8C1C03009B21E4 /* WYCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYCityViewController.h; sourceTree = "<group>"; };
+		CB04A0D21D8C1C03009B21E4 /* WYCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCityViewController.m; sourceTree = "<group>"; };
+		CB04A0D31D8C1C03009B21E4 /* WYCityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WYCityViewController.xib; sourceTree = "<group>"; };
 		CB660DAC1D88E1F60036E26E /* MeituanHD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeituanHD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB660DB01D88E1F60036E26E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB660DB21D88E1F60036E26E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -171,6 +176,9 @@
 				CB04A0CC1D8C144A009B21E4 /* WYDistrictViewController.h */,
 				CB04A0CD1D8C144A009B21E4 /* WYDistrictViewController.m */,
 				CB04A0CE1D8C144A009B21E4 /* WYDistrictViewController.xib */,
+				CB04A0D11D8C1C03009B21E4 /* WYCityViewController.h */,
+				CB04A0D21D8C1C03009B21E4 /* WYCityViewController.m */,
+				CB04A0D31D8C1C03009B21E4 /* WYCityViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -328,6 +336,7 @@
 				CB660DD41D88E2EE0036E26E /* categories.plist in Resources */,
 				CB660DD71D88E2EE0036E26E /* sorts.plist in Resources */,
 				CB660DBC1D88E1F60036E26E /* Assets.xcassets in Resources */,
+				CB04A0D51D8C1C03009B21E4 /* WYCityViewController.xib in Resources */,
 				CB660DD61D88E2EE0036E26E /* cityGroups.plist in Resources */,
 				CB660DEF1D89B8960036E26E /* WYDropDownView.xib in Resources */,
 			);
@@ -389,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB660DE41D8979630036E26E /* UIBarButtonItem+HMCategory.m in Sources */,
+				CB04A0D41D8C1C03009B21E4 /* WYCityViewController.m in Sources */,
 				CB660DE51D8979630036E26E /* UIView+HMCategory.m in Sources */,
 				CB660DB41D88E1F60036E26E /* AppDelegate.m in Sources */,
 				CB660DED1D89B7560036E26E /* WYDropDownView.m in Sources */,
