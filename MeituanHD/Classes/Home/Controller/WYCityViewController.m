@@ -9,10 +9,11 @@
 #import "WYCityViewController.h"
 #import "WYCityGroupModel.h"
 
-@interface WYCityViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface WYCityViewController ()<UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate>
 @property (nonatomic, strong) NSArray *cityGroupArray;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (weak, nonatomic) IBOutlet UITableView *tabView;
+@property (weak, nonatomic) IBOutlet UIButton *coverButton;
 
 
 @end
@@ -39,7 +40,57 @@
     self.title = @"切换城市";
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem barBuutonItemWithTarget:self action:@selector(backItemClick) icon:@"btn_navigation_close" highlighticon:@"btn_navigation_close_hl"];
 }
-#pragma mark -数据源
+
+#pragma mark -UISearchBar代理
+-(void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
+{
+    //隐藏导航栏
+    self.navigationController.navigationBarHidden = YES;
+    //2. 更换搜索框背景图片
+    searchBar.backgroundImage = [UIImage imageNamed:@"bg_login_textfield_hl"];
+    //显示取消按钮
+    [searchBar setShowsCancelButton:YES animated:YES];
+    //显示遮盖
+    self.coverButton.alpha = 0.5;
+}
+
+-(void)searchBarTextDidEndEditing:(UISearchBar *)searchBar
+{
+    //1. 导航栏隐藏
+    self.navigationController.navigationBarHidden = NO;
+    
+    //2. 更换搜索框背景图片
+    searchBar.backgroundImage = [UIImage imageNamed:@"bg_login_textfield"];
+    
+    //3. 显示取消按钮
+    [searchBar setShowsCancelButton:NO animated:YES];
+    
+    //4. 显示遮盖
+    self.coverButton.alpha = 0;
+    
+//    //5. 文本框清空
+//    searchBar.text = @"";
+//    
+//    //6. 隐藏搜索结果控制器
+//    self.citySearchVC.view.hidden = YES;
+
+}
+
+//searchBar后面取消按钮的点击
+-(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
+    //放弃第一响应者,相当于end编辑,会走到searchBarTextDidEndEditing这个方法里面
+    [searchBar resignFirstResponder];
+}
+
+//遮盖按钮的点击
+- (IBAction)coverBtnClick:(id)sender
+{
+    [self.view endEditing:YES];
+}
+
+
+#pragma mark -UITabelView数据源
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return self.cityGroupArray.count;
@@ -64,7 +115,7 @@
     return  cell;
 }
 
-#pragma mark -代理方法
+#pragma mark -UITabelView代理方法
 //设置组头
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
