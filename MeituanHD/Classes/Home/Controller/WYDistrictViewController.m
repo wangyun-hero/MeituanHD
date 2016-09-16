@@ -10,6 +10,7 @@
 #import "WYDropDownView.h"
 #import "WYCityViewController.h"
 #import "WYCityViewController.h"
+#import "WYNavController.h"
 
 @interface WYDistrictViewController ()
 
@@ -20,13 +21,19 @@
 
 - (IBAction)switchCityButtonClick:(id)sender
 {
+    //让之前的控制器消失
+    [self dismissViewControllerAnimated:YES completion:nil];
+    //给cityVC包裹一个nav控制器
     WYCityViewController *cityVC = [WYCityViewController new];
+    WYNavController *nav = [[WYNavController alloc]initWithRootViewController:cityVC];
     //呈现样式
-    cityVC.modalPresentationStyle = UIModalPresentationFormSheet;
+    nav.modalPresentationStyle = UIModalPresentationFormSheet;
     //转场样式
-    cityVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    nav.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     //模态
-    [self presentViewController:cityVC animated:YES completion:nil];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:nav animated:YES completion:nil];
+    
+//    [self presentViewController:nav animated:YES completion:nil];
     
 }
 
