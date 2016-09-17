@@ -29,6 +29,9 @@
     
     //初始化搜索结果的数组
     self.searchResultArray = [NSMutableArray array];
+    
+    
+    
 }
 
 -(void)setSearchText:(NSString *)searchText
@@ -51,6 +54,13 @@
     //刷新数据
     [self.tableView reloadData];
     
+    
+}
+
+#pragma mark -tabelview代理
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [WYNotificationCenter postNotificationName:HMCityDidChangeNotifacation object:nil userInfo:@{HMCityNameKey:self.searchResultArray[indexPath.row]}];
+    //取消模态
     
 }
 

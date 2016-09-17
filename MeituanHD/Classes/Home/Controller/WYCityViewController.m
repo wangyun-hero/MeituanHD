@@ -144,6 +144,9 @@
     
     //发送通知
     [WYNotificationCenter postNotificationName:HMCityDidChangeNotifacation object:nil userInfo:@{HMCityNameKey:model.cities[indexPath.row]}];
+    
+    //取消模态
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 //右侧索引
