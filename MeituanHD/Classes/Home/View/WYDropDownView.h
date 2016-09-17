@@ -13,6 +13,10 @@
 /** 提供类方法, 快速创建View*/
 + (instancetype)dropdownView;
 
+//增加分类属性
 @property(nonatomic,strong) NSArray *categoryModelArray;
+
+//增加区域属性
+@property (nonatomic, strong) NSArray *districtArray;
 
 @end

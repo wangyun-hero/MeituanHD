@@ -61,7 +61,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [WYNotificationCenter postNotificationName:HMCityDidChangeNotifacation object:nil userInfo:@{HMCityNameKey:self.searchResultArray[indexPath.row]}];
     //取消模态
-    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark -数据源

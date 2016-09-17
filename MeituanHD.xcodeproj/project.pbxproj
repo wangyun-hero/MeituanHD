@@ -15,6 +15,7 @@
 		CB04A0DB1D8C60BA009B21E4 /* WYCitySearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB04A0DA1D8C60BA009B21E4 /* WYCitySearchTableViewController.m */; };
 		CB04A0DE1D8C6675009B21E4 /* WYCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB04A0DD1D8C6675009B21E4 /* WYCityModel.m */; };
 		CB04A0E11D8D5BD1009B21E4 /* HMConst.m in Sources */ = {isa = PBXBuildFile; fileRef = CB04A0E01D8D5BD1009B21E4 /* HMConst.m */; };
+		CB04A0E41D8D8A03009B21E4 /* WYDistrictModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB04A0E31D8D8A03009B21E4 /* WYDistrictModel.m */; };
 		CB660DB11D88E1F60036E26E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DB01D88E1F60036E26E /* main.m */; };
 		CB660DB41D88E1F60036E26E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DB31D88E1F60036E26E /* AppDelegate.m */; };
 		CB660DBC1D88E1F60036E26E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB660DBB1D88E1F60036E26E /* Assets.xcassets */; };
@@ -54,6 +55,8 @@
 		CB04A0DD1D8C6675009B21E4 /* WYCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCityModel.m; sourceTree = "<group>"; };
 		CB04A0DF1D8D5BD1009B21E4 /* HMConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HMConst.h; path = MeituanHD/Classes/Main/Common/HMConst.h; sourceTree = SOURCE_ROOT; };
 		CB04A0E01D8D5BD1009B21E4 /* HMConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HMConst.m; path = MeituanHD/Classes/Main/Common/HMConst.m; sourceTree = SOURCE_ROOT; };
+		CB04A0E21D8D8A03009B21E4 /* WYDistrictModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYDistrictModel.h; sourceTree = "<group>"; };
+		CB04A0E31D8D8A03009B21E4 /* WYDistrictModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYDistrictModel.m; sourceTree = "<group>"; };
 		CB660DAC1D88E1F60036E26E /* MeituanHD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeituanHD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB660DB01D88E1F60036E26E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB660DB21D88E1F60036E26E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -208,6 +211,8 @@
 				CB04A0D71D8C427C009B21E4 /* WYCityGroupModel.m */,
 				CB04A0DC1D8C6675009B21E4 /* WYCityModel.h */,
 				CB04A0DD1D8C6675009B21E4 /* WYCityModel.m */,
+				CB04A0E21D8D8A03009B21E4 /* WYDistrictModel.h */,
+				CB04A0E31D8D8A03009B21E4 /* WYDistrictModel.m */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -418,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB660DE41D8979630036E26E /* UIBarButtonItem+HMCategory.m in Sources */,
+				CB04A0E41D8D8A03009B21E4 /* WYDistrictModel.m in Sources */,
 				CB04A0D41D8C1C03009B21E4 /* WYCityViewController.m in Sources */,
 				CB660DE51D8979630036E26E /* UIView+HMCategory.m in Sources */,
 				CB660DB41D88E1F60036E26E /* AppDelegate.m in Sources */,

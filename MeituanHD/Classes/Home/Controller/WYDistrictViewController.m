@@ -51,6 +51,8 @@
     //设置Popover的大小
     CGFloat height = CGRectGetMaxY(dropView.frame);
     self.preferredContentSize = CGSizeMake(dropView.size.width, height);
+    
+    dropView.districtArray = self.districtArray;
 }
 
 

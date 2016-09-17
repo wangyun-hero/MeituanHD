@@ -10,7 +10,10 @@
 #import "HomeNavView.h"
 #import "WYCategoryViewController.h"
 #import "WYDistrictViewController.h"
+#import "WYCityModel.h"
 @interface MTCollectionViewController ()
+//用全局属性记录之前选中的城市
+@property(nonatomic,copy) NSString *selectCityName;
 
 @end
 
@@ -45,6 +48,8 @@
     //取到通过通知传的值,就是城市名字
     NSString *cityName = notification.userInfo[HMCityNameKey];
     NSLog(@"%@",cityName)
+    
+    self.selectCityName = cityName;
 }
 
 #pragma mark -移除通知
@@ -95,6 +100,22 @@
 {
     //获取控制器
     WYDistrictViewController *vc = [WYDistrictViewController new];
+    
+    //在这里要判断之前有没有选中城市
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"cities.plist" ofType:nil];
+    NSArray *citysPliset = [NSArray arrayWithContentsOfFile:path];
+    //转成模型数组
+    NSArray *citysArray = [NSArray yy_modelArrayWithClass:NSClassFromString(@"WYCityModel") json:citysPliset];
+    for (WYCityModel *model in citysArray) {
+        //如果选中的城市和数据里name相等
+        if ([self.selectCityName isEqualToString:model.name]) {
+            //将数据传递
+            vc.districtArray = model.districts;
+        }
+    }
+    
+    
+    
     //呈现方式
     vc.modalPresentationStyle = UIModalPresentationPopover;
     //获取Popover
