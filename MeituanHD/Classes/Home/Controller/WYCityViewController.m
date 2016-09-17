@@ -137,6 +137,15 @@
     return model.title;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //取到对应组的模型
+    WYCityGroupModel *model = self.cityGroupArray[indexPath.section];
+    
+    //发送通知
+    [WYNotificationCenter postNotificationName:HMCityDidChangeNotifacation object:nil userInfo:@{HMCityNameKey:model.cities[indexPath.row]}];
+}
+
 //右侧索引
 -(NSArray<NSString *> *)sectionIndexTitlesForTableView:(UITableView *)tableView
 {

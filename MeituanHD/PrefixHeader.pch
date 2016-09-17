@@ -17,12 +17,16 @@
 #import "UIView+HMCategory.h"
 #import "UIBarButtonItem+HMCategory.h"
 
-
+/** 常量值*/
+#import "HMConst.h"
 
 /** 宏定义*/
 
 #define HMColor(r,g,b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1]
 #define WYTintColor HMColor(94, 185, 173)
+
+//通知中心的宏
+#define WYNotificationCenter [NSNotificationCenter defaultCenter]
 
 /** NSLog 输出宏*/
 #ifdef DEBUG

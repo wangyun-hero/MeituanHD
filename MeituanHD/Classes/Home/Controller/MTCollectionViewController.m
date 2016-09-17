@@ -34,6 +34,23 @@
     [self setupNavLeft];
     //设置右边的item
     [self setupNavRight];
+    
+    //添加城市选择的通知
+    [WYNotificationCenter addObserver:self selector:@selector(cityVCDidChangeNotification:) name:HMCityDidChangeNotifacation object:nil];
+}
+
+#pragma mark -通知实现
+-(void)cityVCDidChangeNotification:(NSNotification *)notification
+{
+    //取到通过通知传的值,就是城市名字
+    NSString *cityName = notification.userInfo[HMCityNameKey];
+    NSLog(@"%@",cityName)
+}
+
+#pragma mark -移除通知
+-(void)dealloc
+{
+    [WYNotificationCenter removeObserver:self];
 }
 
 -(void)setupNavLeft
