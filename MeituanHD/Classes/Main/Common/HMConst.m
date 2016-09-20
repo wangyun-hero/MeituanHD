@@ -26,3 +26,6 @@ NSString *const HMDistrictSubtitleKey = @"HMDistrictSubtitleKey";
 // 排序通知
 NSString *const HMSortDidChangeNotifacation = @"HMSortDidChangeNotifacation";
 NSString *const HMSortModelKey = @"HMSortModelKey";
+
+// Size的宽度
+const CGFloat HMDealCellWidth = 300;

@@ -11,6 +11,12 @@
 #import "WYCategoryViewController.h"
 #import "WYDistrictViewController.h"
 #import "WYCityModel.h"
+#import "WYSortModel.h"
+#import "WYSortViewController.h"
+#import "WYMapViewController.h"
+#import "WYNavController.h"
+
+
 @interface MTCollectionViewController ()
 //用全局属性记录之前选中的城市
 @property(nonatomic,copy) NSString *selectCityName;
@@ -40,6 +46,10 @@
     
     //添加城市选择的通知
     [WYNotificationCenter addObserver:self selector:@selector(cityVCDidChangeNotification:) name:HMCityDidChangeNotifacation object:nil];
+    
+    // 添加排序选择的通知
+    [WYNotificationCenter addObserver:self selector:@selector(sortDidChangeNotifacation:) name:HMSortDidChangeNotifacation object:nil];
+
 }
 
 #pragma mark -通知实现
@@ -50,6 +60,11 @@
     NSLog(@"%@",cityName)
     
     self.selectCityName = cityName;
+}
+
+-(void)sortDidChangeNotifacation:(NSNotification *)notification
+{
+    WYSortModel *sortModel = notification.userInfo[HMSortModelKey];
 }
 
 #pragma mark -移除通知
@@ -79,7 +94,7 @@
     //4 排序
     HomeNavView *sortNavView = [HomeNavView homeNavView];
     UIBarButtonItem *sortItem = [[UIBarButtonItem alloc]initWithCustomView:sortNavView];
-    
+    [sortNavView addTarget:self action:@selector(sortClick) forControlEvents:UIControlEventTouchUpInside];
     
     self.navigationItem.leftBarButtonItems = @[item,cateItem,disItem,sortItem];
 }
@@ -96,6 +111,7 @@
     self.navigationItem.rightBarButtonItems = @[mapItem,searchItem];
 }
 
+#pragma mark -item点击弹框
 -(void)districtClick
 {
     //获取控制器
@@ -140,9 +156,24 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 
+-(void)sortClick
+{
+    //1 获取控制器
+    WYSortViewController *sortVC = [WYSortViewController new];
+    //2 呈现样式
+    sortVC.modalPresentationStyle = UIModalPresentationPopover;
+    //3 popover
+    UIPopoverPresentationController *sortPop = sortVC.popoverPresentationController;
+    //4 绑定属性
+    sortPop.barButtonItem = self.navigationItem.leftBarButtonItems[3];
+    [self presentViewController:sortVC animated:YES completion:nil];
+}
+
 -(void)mapItemClick
 {
-    NSLog(@"地图");
+    WYMapViewController *mapVC = [[WYMapViewController alloc]init];
+    WYNavController *VC = [[WYNavController alloc]initWithRootViewController:mapVC];
+    [self presentViewController:VC animated:YES completion:nil];
 }
 
 -(void)searchItemClick

@@ -16,6 +16,8 @@
 		CB04A0DE1D8C6675009B21E4 /* WYCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB04A0DD1D8C6675009B21E4 /* WYCityModel.m */; };
 		CB04A0E11D8D5BD1009B21E4 /* HMConst.m in Sources */ = {isa = PBXBuildFile; fileRef = CB04A0E01D8D5BD1009B21E4 /* HMConst.m */; };
 		CB04A0E41D8D8A03009B21E4 /* WYDistrictModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB04A0E31D8D8A03009B21E4 /* WYDistrictModel.m */; };
+		CB04A0E71D8D9C58009B21E4 /* WYSortModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB04A0E61D8D9C58009B21E4 /* WYSortModel.m */; };
+		CB04A0EA1D8D9D25009B21E4 /* WYSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB04A0E91D8D9D25009B21E4 /* WYSortViewController.m */; };
 		CB660DB11D88E1F60036E26E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DB01D88E1F60036E26E /* main.m */; };
 		CB660DB41D88E1F60036E26E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DB31D88E1F60036E26E /* AppDelegate.m */; };
 		CB660DBC1D88E1F60036E26E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB660DBB1D88E1F60036E26E /* Assets.xcassets */; };
@@ -35,6 +37,9 @@
 		CB660DF51D8A78870036E26E /* WYCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DF41D8A78870036E26E /* WYCategoryModel.m */; };
 		CB660DF81D8A8E870036E26E /* WYDropdownLeftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DF71D8A8E870036E26E /* WYDropdownLeftTableViewCell.m */; };
 		CB660DFB1D8A8EA10036E26E /* WYDropdownRightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DFA1D8A8EA10036E26E /* WYDropdownRightTableViewCell.m */; };
+		CB88B8CF1D919555008C70FF /* WYMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB88B8CD1D919555008C70FF /* WYMapViewController.m */; };
+		CB88B8D01D919555008C70FF /* WYMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB88B8CE1D919555008C70FF /* WYMapViewController.xib */; };
+		CB88B8D21D9197E6008C70FF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB88B8D11D9197E6008C70FF /* MapKit.framework */; };
 		D9C75806F9316C84C1FD0C6B /* libPods-MeituanHD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BD89EB5F6214F950251712 /* libPods-MeituanHD.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +62,10 @@
 		CB04A0E01D8D5BD1009B21E4 /* HMConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HMConst.m; path = MeituanHD/Classes/Main/Common/HMConst.m; sourceTree = SOURCE_ROOT; };
 		CB04A0E21D8D8A03009B21E4 /* WYDistrictModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYDistrictModel.h; sourceTree = "<group>"; };
 		CB04A0E31D8D8A03009B21E4 /* WYDistrictModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYDistrictModel.m; sourceTree = "<group>"; };
+		CB04A0E51D8D9C58009B21E4 /* WYSortModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYSortModel.h; sourceTree = "<group>"; };
+		CB04A0E61D8D9C58009B21E4 /* WYSortModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYSortModel.m; sourceTree = "<group>"; };
+		CB04A0E81D8D9D25009B21E4 /* WYSortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYSortViewController.h; sourceTree = "<group>"; };
+		CB04A0E91D8D9D25009B21E4 /* WYSortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYSortViewController.m; sourceTree = "<group>"; };
 		CB660DAC1D88E1F60036E26E /* MeituanHD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeituanHD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB660DB01D88E1F60036E26E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB660DB21D88E1F60036E26E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +99,10 @@
 		CB660DF71D8A8E870036E26E /* WYDropdownLeftTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYDropdownLeftTableViewCell.m; sourceTree = "<group>"; };
 		CB660DF91D8A8EA10036E26E /* WYDropdownRightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYDropdownRightTableViewCell.h; sourceTree = "<group>"; };
 		CB660DFA1D8A8EA10036E26E /* WYDropdownRightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYDropdownRightTableViewCell.m; sourceTree = "<group>"; };
+		CB88B8CC1D919555008C70FF /* WYMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYMapViewController.h; sourceTree = "<group>"; };
+		CB88B8CD1D919555008C70FF /* WYMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYMapViewController.m; sourceTree = "<group>"; };
+		CB88B8CE1D919555008C70FF /* WYMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WYMapViewController.xib; sourceTree = "<group>"; };
+		CB88B8D11D9197E6008C70FF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E90F004EC7E010EA5DF2A94D /* Pods-MeituanHD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeituanHD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeituanHD/Pods-MeituanHD.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB88B8D21D9197E6008C70FF /* MapKit.framework in Frameworks */,
 				D9C75806F9316C84C1FD0C6B /* libPods-MeituanHD.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +122,7 @@
 		4FF55A81C6F6AA5713167488 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB88B8D11D9197E6008C70FF /* MapKit.framework */,
 				28BD89EB5F6214F950251712 /* libPods-MeituanHD.a */,
 			);
 			name = Frameworks;
@@ -157,6 +172,7 @@
 		CB660DC61D88E2750036E26E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CB88B8C81D9194F9008C70FF /* Map(地图) */,
 				CB660DC81D88E2750036E26E /* Home */,
 				CB660DCD1D88E2750036E26E /* Main */,
 			);
@@ -198,6 +214,8 @@
 				CB04A0D31D8C1C03009B21E4 /* WYCityViewController.xib */,
 				CB04A0D91D8C60BA009B21E4 /* WYCitySearchTableViewController.h */,
 				CB04A0DA1D8C60BA009B21E4 /* WYCitySearchTableViewController.m */,
+				CB04A0E81D8D9D25009B21E4 /* WYSortViewController.h */,
+				CB04A0E91D8D9D25009B21E4 /* WYSortViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -213,6 +231,8 @@
 				CB04A0DD1D8C6675009B21E4 /* WYCityModel.m */,
 				CB04A0E21D8D8A03009B21E4 /* WYDistrictModel.h */,
 				CB04A0E31D8D8A03009B21E4 /* WYDistrictModel.m */,
+				CB04A0E51D8D9C58009B21E4 /* WYSortModel.h */,
+				CB04A0E61D8D9C58009B21E4 /* WYSortModel.m */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -283,6 +303,40 @@
 				CB660DE31D8979630036E26E /* UIView+HMCategory.m */,
 			);
 			path = Adition;
+			sourceTree = "<group>";
+		};
+		CB88B8C81D9194F9008C70FF /* Map(地图) */ = {
+			isa = PBXGroup;
+			children = (
+				CB88B8C91D9194F9008C70FF /* Controller */,
+				CB88B8CA1D9194F9008C70FF /* Model */,
+				CB88B8CB1D9194F9008C70FF /* View */,
+			);
+			path = "Map(地图)";
+			sourceTree = "<group>";
+		};
+		CB88B8C91D9194F9008C70FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB88B8CC1D919555008C70FF /* WYMapViewController.h */,
+				CB88B8CD1D919555008C70FF /* WYMapViewController.m */,
+				CB88B8CE1D919555008C70FF /* WYMapViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CB88B8CA1D9194F9008C70FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB88B8CB1D9194F9008C70FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CE2AD9C90FD34CF7B40C8A57 /* Pods */ = {
@@ -362,6 +416,7 @@
 				CB660DD71D88E2EE0036E26E /* sorts.plist in Resources */,
 				CB660DBC1D88E1F60036E26E /* Assets.xcassets in Resources */,
 				CB04A0D51D8C1C03009B21E4 /* WYCityViewController.xib in Resources */,
+				CB88B8D01D919555008C70FF /* WYMapViewController.xib in Resources */,
 				CB660DD61D88E2EE0036E26E /* cityGroups.plist in Resources */,
 				CB660DEF1D89B8960036E26E /* WYDropDownView.xib in Resources */,
 			);
@@ -423,14 +478,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB660DE41D8979630036E26E /* UIBarButtonItem+HMCategory.m in Sources */,
+				CB04A0E71D8D9C58009B21E4 /* WYSortModel.m in Sources */,
 				CB04A0E41D8D8A03009B21E4 /* WYDistrictModel.m in Sources */,
 				CB04A0D41D8C1C03009B21E4 /* WYCityViewController.m in Sources */,
 				CB660DE51D8979630036E26E /* UIView+HMCategory.m in Sources */,
+				CB04A0EA1D8D9D25009B21E4 /* WYSortViewController.m in Sources */,
 				CB660DB41D88E1F60036E26E /* AppDelegate.m in Sources */,
 				CB660DED1D89B7560036E26E /* WYDropDownView.m in Sources */,
 				CB04A0D81D8C427C009B21E4 /* WYCityGroupModel.m in Sources */,
 				CB04A0E11D8D5BD1009B21E4 /* HMConst.m in Sources */,
 				CB04A0DB1D8C60BA009B21E4 /* WYCitySearchTableViewController.m in Sources */,
+				CB88B8CF1D919555008C70FF /* WYMapViewController.m in Sources */,
 				CB660DE81D899B0F0036E26E /* HomeNavView.m in Sources */,
 				CB660DF81D8A8E870036E26E /* WYDropdownLeftTableViewCell.m in Sources */,
 				CB04A0DE1D8C6675009B21E4 /* WYCityModel.m in Sources */,

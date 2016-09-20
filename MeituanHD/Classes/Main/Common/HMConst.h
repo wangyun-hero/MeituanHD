@@ -33,4 +33,5 @@ UIKIT_EXTERN NSString *const HMDistrictSubtitleKey;
 UIKIT_EXTERN NSString *const HMSortDidChangeNotifacation;
 UIKIT_EXTERN NSString *const HMSortModelKey;
 
-
+// Size的宽度
+UIKIT_EXTERN const CGFloat HMDealCellWidth;

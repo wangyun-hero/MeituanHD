@@ -19,17 +19,28 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" placeholder="请输入城市名" backgroundImage="bg_login_textfield" translatesAutoresizingMaskIntoConstraints="NO" id="a2i-Eq-i81">
-                    <constraints>
-                        <constraint firstAttribute="height" constant="44" id="aBa-xc-HAd"/>
-                    </constraints>
-                    <textInputTraits key="textInputTraits"/>
-                    <connections>
-                        <outlet property="delegate" destination="-1" id="pWv-YH-t3U"/>
-                    </connections>
-                </searchBar>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5BR-kh-tNb">
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OGd-3e-L4B">
+                            <subviews>
+                                <searchBar contentMode="redraw" placeholder="请输入城市名" backgroundImage="bg_login_textfield" translatesAutoresizingMaskIntoConstraints="NO" id="a2i-Eq-i81">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="aBa-xc-HAd"/>
+                                    </constraints>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="pWv-YH-t3U"/>
+                                    </connections>
+                                </searchBar>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Ka-A8-nAV">
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="593" id="ft2-jm-6k6"/>
+                    </constraints>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Asx-El-uWn"/>
                         <outlet property="delegate" destination="-1" id="bcJ-Lw-kXU"/>
@@ -44,17 +55,15 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="a2i-Eq-i81" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="0iT-8d-xFB"/>
                 <constraint firstItem="YRb-Jr-rn8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="15y-EE-5tc"/>
+                <constraint firstItem="8Ka-A8-nAV" firstAttribute="centerX" secondItem="5BR-kh-tNb" secondAttribute="centerX" id="6YT-xF-WTU"/>
                 <constraint firstAttribute="trailing" secondItem="YRb-Jr-rn8" secondAttribute="trailing" id="B0f-oL-Ilg"/>
                 <constraint firstAttribute="bottom" secondItem="8Ka-A8-nAV" secondAttribute="bottom" id="Di3-Eu-zey"/>
                 <constraint firstItem="8Ka-A8-nAV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ITQ-la-vvG"/>
-                <constraint firstItem="8Ka-A8-nAV" firstAttribute="top" secondItem="a2i-Eq-i81" secondAttribute="bottom" constant="15" id="VZ7-Nl-XMd"/>
                 <constraint firstAttribute="bottom" secondItem="YRb-Jr-rn8" secondAttribute="bottom" id="WEm-fw-2jR"/>
-                <constraint firstItem="YRb-Jr-rn8" firstAttribute="top" secondItem="a2i-Eq-i81" secondAttribute="bottom" constant="15" id="egD-oH-pYG"/>
-                <constraint firstItem="a2i-Eq-i81" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="ft5-mt-VLL"/>
+                <constraint firstItem="5BR-kh-tNb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="diV-3A-JMX"/>
+                <constraint firstItem="8Ka-A8-nAV" firstAttribute="top" secondItem="5BR-kh-tNb" secondAttribute="bottom" constant="15" id="mTY-jU-Fck"/>
                 <constraint firstAttribute="trailing" secondItem="8Ka-A8-nAV" secondAttribute="trailing" id="oHh-0l-eaG"/>
-                <constraint firstAttribute="trailing" secondItem="a2i-Eq-i81" secondAttribute="trailing" constant="15" id="yjV-dF-UFN"/>
             </constraints>
             <point key="canvasLocation" x="60.5" y="99.5"/>
         </view>
