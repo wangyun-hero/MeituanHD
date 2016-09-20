@@ -26,7 +26,6 @@
 		CB660DD61D88E2EE0036E26E /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB660DD21D88E2EE0036E26E /* cityGroups.plist */; };
 		CB660DD71D88E2EE0036E26E /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB660DD31D88E2EE0036E26E /* sorts.plist */; };
 		CB660DDA1D88E7E50036E26E /* MTCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DD91D88E7E50036E26E /* MTCollectionViewController.m */; };
-		CB660DDD1D88F2950036E26E /* WYNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DDC1D88F2950036E26E /* WYNavController.m */; };
 		CB660DE41D8979630036E26E /* UIBarButtonItem+HMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DE11D8979630036E26E /* UIBarButtonItem+HMCategory.m */; };
 		CB660DE51D8979630036E26E /* UIView+HMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DE31D8979630036E26E /* UIView+HMCategory.m */; };
 		CB660DE81D899B0F0036E26E /* HomeNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB660DE71D899B0F0036E26E /* HomeNavView.m */; };
@@ -40,6 +39,9 @@
 		CB88B8CF1D919555008C70FF /* WYMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB88B8CD1D919555008C70FF /* WYMapViewController.m */; };
 		CB88B8D01D919555008C70FF /* WYMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB88B8CE1D919555008C70FF /* WYMapViewController.xib */; };
 		CB88B8D21D9197E6008C70FF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB88B8D11D9197E6008C70FF /* MapKit.framework */; };
+		CB88B8DA1D91A74C008C70FF /* DPAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = CB88B8D61D91A74C008C70FF /* DPAPI.m */; };
+		CB88B8DB1D91A74C008C70FF /* DPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB88B8D91D91A74C008C70FF /* DPRequest.m */; };
+		CB88B8DE1D91A7D1008C70FF /* WYNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB88B8DD1D91A7D1008C70FF /* WYNavController.m */; };
 		D9C75806F9316C84C1FD0C6B /* libPods-MeituanHD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28BD89EB5F6214F950251712 /* libPods-MeituanHD.a */; };
 /* End PBXBuildFile section */
 
@@ -78,8 +80,6 @@
 		CB660DD31D88E2EE0036E26E /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sorts.plist; sourceTree = "<group>"; };
 		CB660DD81D88E7E50036E26E /* MTCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCollectionViewController.h; sourceTree = "<group>"; };
 		CB660DD91D88E7E50036E26E /* MTCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCollectionViewController.m; sourceTree = "<group>"; };
-		CB660DDB1D88F2950036E26E /* WYNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYNavController.h; sourceTree = "<group>"; };
-		CB660DDC1D88F2950036E26E /* WYNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYNavController.m; sourceTree = "<group>"; };
 		CB660DDE1D88F3E90036E26E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		CB660DE01D8979630036E26E /* UIBarButtonItem+HMCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HMCategory.h"; sourceTree = "<group>"; };
 		CB660DE11D8979630036E26E /* UIBarButtonItem+HMCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HMCategory.m"; sourceTree = "<group>"; };
@@ -103,6 +103,13 @@
 		CB88B8CD1D919555008C70FF /* WYMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYMapViewController.m; sourceTree = "<group>"; };
 		CB88B8CE1D919555008C70FF /* WYMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WYMapViewController.xib; sourceTree = "<group>"; };
 		CB88B8D11D9197E6008C70FF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CB88B8D51D91A74C008C70FF /* DPAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAPI.h; sourceTree = "<group>"; };
+		CB88B8D61D91A74C008C70FF /* DPAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAPI.m; sourceTree = "<group>"; };
+		CB88B8D71D91A74C008C70FF /* DPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPConstants.h; sourceTree = "<group>"; };
+		CB88B8D81D91A74C008C70FF /* DPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRequest.h; sourceTree = "<group>"; };
+		CB88B8D91D91A74C008C70FF /* DPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRequest.m; sourceTree = "<group>"; };
+		CB88B8DC1D91A7D1008C70FF /* WYNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WYNavController.h; path = MeituanHD/Classes/Main/Common/WYNavController.h; sourceTree = SOURCE_ROOT; };
+		CB88B8DD1D91A7D1008C70FF /* WYNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WYNavController.m; path = MeituanHD/Classes/Main/Common/WYNavController.m; sourceTree = SOURCE_ROOT; };
 		E90F004EC7E010EA5DF2A94D /* Pods-MeituanHD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeituanHD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeituanHD/Pods-MeituanHD.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,6 +189,8 @@
 		CB660DC71D88E2750036E26E /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CB88B8DC1D91A7D1008C70FF /* WYNavController.h */,
+				CB88B8DD1D91A7D1008C70FF /* WYNavController.m */,
 				CB04A0DF1D8D5BD1009B21E4 /* HMConst.h */,
 				CB04A0E01D8D5BD1009B21E4 /* HMConst.m */,
 			);
@@ -257,6 +266,7 @@
 		CB660DCC1D88E2750036E26E /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				CB88B8D31D91A74C008C70FF /* Libs */,
 			);
 			name = Libs;
 			path = ../Libs;
@@ -269,8 +279,6 @@
 				CB660DC71D88E2750036E26E /* Common */,
 				CB660DCE1D88E2750036E26E /* Others */,
 				CB660DCC1D88E2750036E26E /* Libs */,
-				CB660DDB1D88F2950036E26E /* WYNavController.h */,
-				CB660DDC1D88F2950036E26E /* WYNavController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -337,6 +345,27 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CB88B8D31D91A74C008C70FF /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				CB88B8D41D91A74C008C70FF /* dianpingapi */,
+			);
+			name = Libs;
+			path = MeituanHD/Classes/Main/Libs;
+			sourceTree = SOURCE_ROOT;
+		};
+		CB88B8D41D91A74C008C70FF /* dianpingapi */ = {
+			isa = PBXGroup;
+			children = (
+				CB88B8D51D91A74C008C70FF /* DPAPI.h */,
+				CB88B8D61D91A74C008C70FF /* DPAPI.m */,
+				CB88B8D71D91A74C008C70FF /* DPConstants.h */,
+				CB88B8D81D91A74C008C70FF /* DPRequest.h */,
+				CB88B8D91D91A74C008C70FF /* DPRequest.m */,
+			);
+			path = dianpingapi;
 			sourceTree = "<group>";
 		};
 		CE2AD9C90FD34CF7B40C8A57 /* Pods */ = {
@@ -486,15 +515,17 @@
 				CB660DB41D88E1F60036E26E /* AppDelegate.m in Sources */,
 				CB660DED1D89B7560036E26E /* WYDropDownView.m in Sources */,
 				CB04A0D81D8C427C009B21E4 /* WYCityGroupModel.m in Sources */,
+				CB88B8DA1D91A74C008C70FF /* DPAPI.m in Sources */,
 				CB04A0E11D8D5BD1009B21E4 /* HMConst.m in Sources */,
 				CB04A0DB1D8C60BA009B21E4 /* WYCitySearchTableViewController.m in Sources */,
 				CB88B8CF1D919555008C70FF /* WYMapViewController.m in Sources */,
+				CB88B8DE1D91A7D1008C70FF /* WYNavController.m in Sources */,
 				CB660DE81D899B0F0036E26E /* HomeNavView.m in Sources */,
 				CB660DF81D8A8E870036E26E /* WYDropdownLeftTableViewCell.m in Sources */,
 				CB04A0DE1D8C6675009B21E4 /* WYCityModel.m in Sources */,
-				CB660DDD1D88F2950036E26E /* WYNavController.m in Sources */,
 				CB660DDA1D88E7E50036E26E /* MTCollectionViewController.m in Sources */,
 				CB660DB11D88E1F60036E26E /* main.m in Sources */,
+				CB88B8DB1D91A74C008C70FF /* DPRequest.m in Sources */,
 				CB04A0CF1D8C144A009B21E4 /* WYDistrictViewController.m in Sources */,
 				CB660DF21D89BCFC0036E26E /* WYCategoryViewController.m in Sources */,
 				CB660DF51D8A78870036E26E /* WYCategoryModel.m in Sources */,
